@@ -9,9 +9,12 @@
 #include "dsm.h"
 
 
+static constexpr int DEFAULT_RADIUS_PIX = 200;
+
+
 DSM::DSM(const std::string& filePath){
         load_asc(filePath);
-        precompute(200.0f, false, 0);
+        precompute(DEFAULT_RADIUS_PIX, false, 0);
 
 };
 
